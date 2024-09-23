@@ -67,4 +67,11 @@ newLink.textContent = link.text;
 topMenuEl.appendChild(newLink)
 });
 
+// Select and cache the <nav id="sub-menu"> element in a variable named subMenuEl.
 
+
+// Set the height subMenuEl element to be "100%".
+
+// Set the background color of subMenuEl to the value stored in the --sub-menu-bg CSS custom property.
+
+// Add the class of flex-around to the subMenuEl element.
