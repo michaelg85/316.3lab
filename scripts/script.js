@@ -132,4 +132,36 @@ topMenuEl.getElementsById(`a`).addEventListener(`click`, function(event){
         }
     }
 
-    
+    //Picking up where I left off.
+//The event listener should add the active class to the <a> element that was clicked, unless it was already active, in which case it should remove it.
+
+// The event listener should remove the active class from each other <a> element in topMenuLinks - whether the active class exists or not.
+    // Hint: Removing a non-existent class from an element does not cause an error!
+
+    //PART 5 ADDING SUBMENU INTERACTION
+
+//Within the event listener, if the clicked <a> element does not yet have a class of "active" (it was inactive when clicked):
+    // A. If the clicked <a> element's "link" object within menuLinks has a subLinks property (all do, except for the "link" object for ABOUT), set the CSS top property of subMenuEl to 100%.
+    // B. Otherwise, set the CSS top property of subMenuEl to 0.
+        // Hint: Caching the "link" object will come in handy for passing its subLinks array later.
+
+// Clear the current contents of subMenuEl.
+
+// Iterate over the subLinks array, passed as an argument, and for each "link" object:
+    // A. Create an <a> element.
+    // B. Add an href attribute to the <a>, with the value set by the href property of the "link" object.
+    // C. Set the element's content to the value of the text property of the "link" object.
+    // D. Append the new element to the subMenuEl.
+
+// Attach a delegated 'click' event listener to subMenuEl.
+    // The first line of code of the event listener function should call the event object's preventDefault() method.
+    // The second line of code within the function should immediately return if the element clicked was not an <a> element.
+    // Log the content of the <a> to verify the handler is working.
+
+// Next, the event listener should set the CSS top property of subMenuEl to 0.
+
+// Remove the active class from each <a> element in topMenuLinks.
+
+// Update the contents of mainEl, within an <h1>, to the contents of the <a> element clicked within subMenuEl.
+
+// If the ABOUT link is clicked, an <h1>About</h1> should be displayed.
